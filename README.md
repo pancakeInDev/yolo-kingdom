@@ -40,7 +40,11 @@ Or download from [mac.getutm.app](https://mac.getutm.app/)
 
 ### Step 2: Download YOLO Kingdom
 
-Download the latest `.utm` file from the [Releases](https://github.com/pancakeInDev/yolo-kingdom/releases) page.
+Download the VM (~9GB compressed):
+
+**[⬇️ Download YOLO Kingdom V1](https://github.com/pancakeInDev/yolo-kingdom/releases)**
+
+> The VM file is hosted externally due to GitHub's file size limits. Check the latest release for download links.
 
 ### Step 3: Import the VM
 
