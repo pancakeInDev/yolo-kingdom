@@ -36,10 +36,12 @@ Claude will handle the rest — installing UTM, downloading the VM, configuring 
 
 ## Requirements
 
-- **Mac with Apple Silicon** (M1/M2/M3/M4)
+- **Mac with Apple Silicon** (M1/M2/M3/M4) — currently ARM64 only
 - **[UTM](https://mac.getutm.app/)** — Free, open-source VM host for macOS
 - **~20GB disk space** for the VM
 - **Claude account** with Claude Code access
+
+> **Note for x86 users**: This VM is built for ARM64 architecture. x86 emulation via UTM is technically possible but impractically slow. An x86 version may come if there's demand — [open an issue](https://github.com/pancakeInDev/yolo-kingdom/issues) if you need it!
 
 ---
 
@@ -55,21 +57,21 @@ Or download from [mac.getutm.app](https://mac.getutm.app/)
 
 ### Step 2: Download YOLO Kingdom
 
-Download the VM (~9GB compressed):
+Download the VM (~4.2GB compressed):
 
-**[⬇️ Download YOLO Kingdom V1](https://github.com/pancakeInDev/yolo-kingdom/releases)**
+**[⬇️ Download yolo-kingdom-v1.0.0.utm.zip](https://drive.google.com/file/d/1RQse1NYz0eniRFaR2Y13fcGpA4CW5Ljz/view?usp=sharing)**
 
-> The VM file is hosted externally due to GitHub's file size limits. Check the latest release for download links.
+### Step 3: Unzip & Import
 
-### Step 3: Import the VM
+1. Unzip the downloaded file: `unzip yolo-kingdom-v1.0.0.utm.zip`
+2. Double-click the `.utm` file — UTM will automatically import it
 
-Double-click the downloaded `.utm` file — UTM will automatically import it.
 
 ---
 
 ## First-Time Setup
 
-### 1. Configure Shared Folders (before starting the VM)
+### 4. Configure Shared Folders (before starting the VM)
 
 1. In UTM, right-click **YOLO Kingdom** → **Edit**
 2. Go to the **Sharing** section
@@ -78,11 +80,11 @@ Double-click the downloaded `.utm` file — UTM will automatically import it.
    - Your Claude agents folder: `~/.claude/agents`
 4. Click **Save**
 
-### 2. Start the VM
+### 5. Start the VM
 
 Click the ▶️ play button in UTM. The VM will boot to a terminal with a welcome screen.
 
-### 3. SSH into the VM (Important!)
+### 6. SSH into the VM (Important!)
 
 **Don't use the UTM terminal directly** — copy-paste doesn't work well there.
 
@@ -93,7 +95,7 @@ ssh gab@<IP shown on welcome screen>
 # Password: yolo
 ```
 
-### 4. Authenticate Claude Code (one-time)
+### 7. Authenticate Claude Code (one-time)
 
 In your SSH session, run:
 
@@ -106,7 +108,7 @@ This starts the GUI. In the UTM window:
 2. Open a terminal
 3. Run `claude` and complete the browser authentication
 
-### 5. Run the Setup Prompt
+### 8. Run the Setup Prompt
 
 Copy the prompt shown in the welcome screen and paste it into **Claude Code running on your Mac**. The AI will automatically:
 

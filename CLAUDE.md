@@ -6,6 +6,8 @@ This file instructs Claude Code on how to help users set up YOLO Kingdom.
 
 YOLO Kingdom is a pre-configured Ubuntu VM for running Claude Code in full autonomous mode (`--dangerously-skip-permissions`) safely isolated from the host Mac. It includes Chrome DevTools MCP for browser automation.
 
+**Important**: This VM is built for **ARM64 architecture** (Apple Silicon M1/M2/M3/M4 Macs only). x86 emulation is technically possible but impractically slow.
+
 ---
 
 ## User Intent Detection
@@ -50,19 +52,25 @@ fi
 ### Phase 2: VM Download & Import
 
 #### 2.1 Download the VM
-Check the latest release from GitHub:
+Direct download link:
 ```bash
-# Get latest release URL
-RELEASE_URL=$(gh release view --repo pancakeInDev/yolo-kingdom --json assets --jq '.assets[0].url' 2>/dev/null)
+# Download URL (Google Drive)
+# https://drive.google.com/file/d/1RQse1NYz0eniRFaR2Y13fcGpA4CW5Ljz/view?usp=sharing
 ```
 
-If `gh` is not available or repo doesn't exist yet, **ASK USER**:
-"Please download the YOLO Kingdom VM from the releases page and tell me the path to the .utm file."
+**ASK USER**: "Please download yolo-kingdom-v1.0.0.utm.zip from the link above (~4.2GB) and tell me when it's done."
 
-#### 2.2 Import into UTM
+#### 2.2 Unzip the VM
 ```bash
-# If user provides a .utm file path, import it
-open "/path/to/Gabs YOLO Kingdom.utm"
+# Find and unzip the downloaded file
+cd ~/Downloads
+unzip yolo-kingdom-v1.0.0.utm.zip
+```
+
+#### 2.3 Import into UTM
+```bash
+# Open the .utm file - UTM will auto-import
+open ~/Downloads/yolo-kingdom-v1.0.0.utm
 ```
 UTM will auto-import when opening a .utm file.
 
