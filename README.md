@@ -40,7 +40,7 @@ Or download from [mac.getutm.app](https://mac.getutm.app/)
 
 ### Step 2: Download YOLO Kingdom
 
-Download the latest `.utm` file from the [Releases](https://github.com/pragmaflow/yolo-kingdom/releases) page.
+Download the latest `.utm` file from the [Releases](https://github.com/pancakeInDev/yolo-kingdom/releases) page.
 
 ### Step 3: Import the VM
 
@@ -273,7 +273,7 @@ We're building toward a VM packed with **autonomous agents** that can:
 
 ## Contributing
 
-This is an open-source project by [PragmaFlow](https://github.com/pragmaflow). PRs welcome!
+This is an open-source project. PRs welcome!
 
 Ideas for contribution:
 - Additional MCP servers
