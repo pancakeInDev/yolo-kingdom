@@ -19,6 +19,21 @@ Modern AI coding assistants like Claude Code are incredibly powerful, but runnin
 
 ---
 
+## Lightning Fast Setup ⚡
+
+Already have Claude Code on your Mac? Just run this:
+
+```
+Clone the yolo-kingdom repo and read CLAUDE.md for full auto-setup instructions.
+Guide me through installing YOLO Kingdom step by step.
+
+git clone https://github.com/pancakeInDev/yolo-kingdom.git
+```
+
+Claude will handle the rest — installing UTM, downloading the VM, configuring everything.
+
+---
+
 ## Requirements
 
 - **Mac with Apple Silicon** (M1/M2/M3/M4)
@@ -226,6 +241,22 @@ Located in `~/.claude.json`:
 - **YOLO mode** disables all Claude Code safety prompts
 
 **The whole point is controlled recklessness** — you're trading safety for speed, but only inside the VM.
+
+### ⚠️ Shared Folders Warning
+
+**IMPORTANT**: When sharing folders from your Mac to the VM, the AI running in YOLO mode has **full read/write access** to those files.
+
+**Only share folders containing files that are:**
+- ✅ Backed up elsewhere
+- ✅ Pushed to a git repository
+- ✅ Not critical system files
+- ✅ Recoverable if deleted or corrupted
+
+**Recommended approach:**
+- Share your `~/dev` folder (assuming projects are git-tracked)
+- Share a copy of `~/.claude/agents`, not your only copy
+- Never share your entire home directory
+- Never share folders with credentials, SSH keys, or secrets
 
 ---
 
