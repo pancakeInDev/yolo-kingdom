@@ -275,15 +275,9 @@ We're building toward a VM packed with **autonomous agents** that can:
 
 ---
 
-## Contributing
+## Issues & Feedback
 
-This is an open-source project. PRs welcome!
-
-Ideas for contribution:
-- Additional MCP servers
-- Custom agents for specific frameworks
-- Performance optimizations
-- Documentation improvements
+Found a bug? Have a suggestion? [Open an issue](https://github.com/pancakeInDev/yolo-kingdom/issues) — feedback is welcome!
 
 ---
 
